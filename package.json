@@ -4,8 +4,8 @@
   "description": "Sex and Hentai Bot",
   "main": "index.js",
   "scripts": {
-    "test": "tsc && node ./dist",
-    "start": "tsc -b && node ./dist"
+    "test": "tsc && node ./dist/bot.js",
+    "start": "tsc -b && node ./dist/bot.js"
   },
   "repository": {
     "type": "git",

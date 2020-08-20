@@ -1,1 +1,1 @@
-build: npm test
+build: npm start
