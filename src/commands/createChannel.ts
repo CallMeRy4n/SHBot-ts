@@ -16,10 +16,6 @@ export default class Help extends Command{
 
     public async exec(mes: Message) {
         const ctc = new CTC(mes);
-        if (ctc.isValid && ctc.isValid.error) {
-            return mes.channel.send(ctc.isValid.reason);
-        }else{
-            ctc.exec();
-        }
+        ctc.isError ? mes.channel.send("There're something wrong here, pls contact to <@603460160307855371>") : ctc.exec();
     }
 }

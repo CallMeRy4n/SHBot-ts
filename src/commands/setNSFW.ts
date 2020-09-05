@@ -23,6 +23,7 @@ export default class setNSFW extends Command {
         }else if (!isNsfw){
             if (message.channel instanceof TextChannel) {
                 await message.channel.setNSFW(true);
+                await message.channel.send("Set nsfw of this to true success");
             }
         }else{
             await message.channel.send("Error, something wrong here!");
